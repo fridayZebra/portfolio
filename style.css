@@ -1,16 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
-* {
-  font-family: 'Shadows Into Light', cursive;
-  font-weight: 200;
-  letter-spacing: .3rem;
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-  background-color: #2A3845;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Shadows+Into+Light&display=swap');
+
+html {
+  display: block;
+
 }
 
 body {
   width: 100%;
+  height: 100%;
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: 200;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  background-color: #2A3845;
        
 }
 
@@ -24,7 +28,11 @@ body {
 
 h2 {
   color: white;
-  
+  letter-spacing: .3rem;
+}
+
+p {
+  display: none;
 }
 
 .about-me>h2 {
@@ -67,18 +75,79 @@ a {
 
 
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+/* Medium devices (landscape tablets, 650px and up) */
+@media only screen and (min-width: 650px) {
 
+  
+  .container {
+    display: grid;
+    grid-template-areas:
+     "atext about"
+     "portfolio btext"
+     "ctext pets";
+}
+  
+  h2 {
+    display: none;
+  }
+  
+ .about-me-text {
+   display: grid;
+   grid-area: atext; 
+   width: 100%;
+
+ }
+  .about-me {
+    grid-area: about;
+     width: 100%;
+  }
+
+   .portfolio-text {
+   display: grid;
+   grid-area: btext; 
+   width: 100%;
+
+ }
+  .portfolio {
+    grid-area: portfolio;
+     width: 100%;
+  }
+
+  .pets-text {
+   display: grid;
+   grid-area: ctext; 
+   width: 100%;
+
+ }
+  .pets {
+    grid-area: pets;
+    width: 100%;
+  }
+  
+  p {
+    display: block;
+    justify-self: center;
+    align-self: center;
+    padding: 50px;
+    color: white;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: .1rem;
+    line-height: 2;
+    font-size: 2rem;
+    margin: 150px;
+  }
+
+div > img {
+  border: none;
+  margin: 30px 20px;
+  bordar-radius: 10px;
+}
+  
+  
+  
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 940px) {
-
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...}
 
 
 

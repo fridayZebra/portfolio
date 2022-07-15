@@ -1,89 +1,68 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  background-color: #2A3845;
 }
 
-
-html, body {
-    width: 100%;
-    height: 100%;
+body {
+  width: 100%;
+       
 }
 
 .container {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-/*     background-color: #2A3845; */
-    grid-template-areas:
-        "aboutme"
-        "portfolio"
-        "mypets";   
-    grid-gap: 10px;
-    width: 600px;
-    margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+   
 }
 
-.h1-aboutme {
-    grid-area: 1 / 1 / 2 / 2; /* row/start column start position / row end /column end position */
-    color: white;
-    z-index: 5;
-    align-self: start;
+h2 {
+  color: white;
 }
 
-.h1-portfolio {
-    grid-area: 2 / 1 / 3 / 2; 
-    color: red;
-    z-index: 5;
-    align-self: start;
-    opacity: 0;
+.about-me>h2 {
+ margin-top: 5px; 
+  
 }
 
-.h1-portfolio:hover {
-    opactiy: 1;
-    
+div > img {
+  width: 90vw;
+  margin: 5px 15px;
+  border-radius: 10px;
+  border: 1px dashed white;
+  }
+
+img:hover {
+  cursor: pointer;
 }
 
-img {
-    width: 100%;
-    height: auto;
-        
+a {
+  text-decoration: none;
 }
 
-.aboutme {
-    grid-area: aboutme;
+/**************** PET GALLERY *******************/
+
+.pet-gallery-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+   
 }
 
-.portfolio {
-    grid-area: portfolio;
-    
+.pet {
+  margin: 5px 10px;
 }
-
-.portfolio > img {
-    height: 75vh;
-    object-fit: cover;
-}
-
-.mypets {
-    grid-area: mypets;
-}
-
-
 
 /* Small devices (portrait tablets and large phones, 576px and up) */
 @media only screen and (min-width: 576px) {...}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .container {
-        
-        grid-template-areas: 
-            "portfolio aboutme"
-            "portfolio aboutme"
-            "portfolio mypets"
-            "portfolio mypets";
-    }   
 
 }
 

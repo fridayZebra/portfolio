@@ -26,8 +26,9 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   justify-items: center;
-   
+     
 }
+
 
 h2 {
   color: white;
@@ -51,7 +52,7 @@ div > img {
   width: 90vw;
   margin: 5px 15px;
   border-radius: 10px;
-  border: 1px dashed white;
+  border: 1px dashed whitesmoke;
   }
 
 img:hover {
@@ -80,18 +81,23 @@ a {
 
 /* Medium devices (landscape tablets, 650px and up) */
 @media only screen and (min-width: 650px) {
-
   
   .container {
+    width: 100vw;
     display: grid;
     grid-template-areas:
      "atext about"
      "portfolio btext"
      "ctext pets";
-}
+  }
   
   h2 {
     display: none;
+  }
+
+div>img {
+  border: none;
+  margin: 20px auto;
   }
   
  .about-me-text {
@@ -102,7 +108,8 @@ a {
  }
   .about-me {
     grid-area: about;
-     width: 100%;
+    width: 100%;
+    margin: 15px;
   }
 
    .portfolio-text {
@@ -113,7 +120,8 @@ a {
  }
   .portfolio {
     grid-area: portfolio;
-     width: 100%;
+    width: 100%;
+    margin-left: 20px;
   }
 
   .pets-text {
@@ -131,22 +139,16 @@ a {
     display: block;
     justify-self: center;
     align-self: center;
-    padding: 50px;
+    padding: 10px;
     color: white;
     border-radius: 10px;
     font-family: 'Roboto', sans-serif;
     letter-spacing: .1rem;
-    line-height: 2;
+    line-height: 1.4;
     font-size: 2rem;
-    margin: 150px;
-  }
+    margin: 5px 20px;
+    
 
-div > img {
-  border: none;
-  margin: 30px 20px;
-  bordar-radius: 10px;
-}
-  
   
   
 }

@@ -83,12 +83,13 @@ a {
 @media only screen and (min-width: 650px) {
   
   .container {
-    width: 100vw;
+    width: 75vw;
     display: grid;
-    grid-template-areas:
+    grid-template-columns: 1fr 1fr;
+/*     grid-template-areas:
      "atext about"
      "portfolio btext"
-     "ctext pets";
+     "ctext pets"; */
   }
   
   h2 {
@@ -98,15 +99,16 @@ a {
 div>img {
   border: none;
   margin: 20px auto;
+  
   }
   
  .about-me-text {
    display: grid;
    grid-area: atext; 
    width: 100%;
-
+   
  }
-  .about-me {
+/*   .about-me {
     grid-area: about;
     width: 100%;
     margin: 15px;
@@ -122,18 +124,18 @@ div>img {
     grid-area: portfolio;
     width: 100%;
     margin-left: 20px;
-  }
+  } */
 
   .pets-text {
    display: grid;
    grid-area: ctext; 
    width: 100%;
 
- }
+/*  }
   .pets {
     grid-area: pets;
     width: 100%;
-  }
+  } */
   
   p {
     display: block;

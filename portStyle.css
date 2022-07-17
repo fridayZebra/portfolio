@@ -11,7 +11,7 @@ body {
   width: 100%;
   background: whitesmoke;
     font-family: 'Shadows Into Light', cursive;
-    letter-spacing: .3rem;
+    letter-spacing: .2rem;
 }
 
 .portfolio-container {
@@ -24,16 +24,56 @@ body {
 div>h2 {
   display: grid;
   justify-content: center;
+  font-size: 1.5rem;
   
 }
 div>img {
   width: 90vw;
   margin: 10px;
   border-radius: 10px;
-  border: 1px dashed lightgray;
+  border: 1px dashed gray;
 }
 
 a {
   text-decoration: none;
+  color: aliceblue;
+}
+
+a:visited {
+  color: aliceblue;
+}
+
+/* Medium devices (landscape tablets, 650px and up) */
+@media only screen and (min-width: 650px) {
+
+  body {
+    background: #2A3845;
+  }
   
+  .portfolio-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    letter-spacing: .3rem;
+}
+ div>img {
+  object-fit: cover;
+  width: 90%;
+}
+
+
+}
+
+/* Medium devices (landscape tablets, 650px and up) */
+@media only screen and (min-width: 1450px) {
+.portfolio-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 65vw;
+}
+
+
 }

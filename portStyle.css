@@ -9,7 +9,7 @@
 
 body {
   width: 100%;
-  background: whitesmoke;
+  background: #2A3845;
     font-family: 'Shadows Into Light', cursive;
     letter-spacing: .2rem;
 }
@@ -43,36 +43,36 @@ a:visited {
   color: aliceblue;
 }
 
-/* Medium devices (landscape tablets, 650px and up) */
-@media only screen and (min-width: 650px) {
-
-  body {
-    background: #2A3845;
-  }
-  
+/* Medium devices (landscape tablets, 750px and up) */
+@media only screen and (min-width: 750px) {
+   
   .portfolio-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
-    align-items: center;
+    align-items: end;
     margin: auto;
     letter-spacing: .3rem;
+    width: 100;
 }
  div>img {
-  object-fit: cover;
-  width: 90%;
-}
-
-
-}
-
-/* Medium devices (landscape tablets, 650px and up) */
-@media only screen and (min-width: 1450px) {
-.portfolio-container {
   display: grid;
-  justify-content: center;
-  align-items: center;
-  width: 65vw;
+  object-fit: cover;
+  width: 350px;
+  height: 350px;
+  margin: 3px 8px;  
+}
+
+
+}
+
+@media only screen and (min-width: 1050px) {
+   div>img {
+  display: grid;
+  object-fit: cover;
+  width: 500px;
+  height: 500px;
+  margin: 10px 20px;  
 }
 
 

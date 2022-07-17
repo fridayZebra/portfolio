@@ -81,61 +81,13 @@ a {
 
 /* Medium devices (landscape tablets, 650px and up) */
 @media only screen and (min-width: 650px) {
-  
+
   .container {
-    width: 75vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
-/*     grid-template-areas:
-     "atext about"
-     "portfolio btext"
-     "ctext pets"; */
+    justify-content: center;
+    
   }
-  
-  h2 {
-    display: none;
-  }
-
-div>img {
-  border: none;
-  margin: 20px auto;
-  
-  }
-  
- .about-me-text {
-   display: grid;
-   grid-area: atext; 
-   width: 100%;
-   
- }
-/*   .about-me {
-    grid-area: about;
-    width: 100%;
-    margin: 15px;
-  }
-
-   .portfolio-text {
-   display: grid;
-   grid-area: btext; 
-   width: 100%;
-
- }
-  .portfolio {
-    grid-area: portfolio;
-    width: 100%;
-    margin-left: 20px;
-  } */
-
-  .pets-text {
-   display: grid;
-   grid-area: ctext; 
-   width: 100%;
-
-/*  }
-  .pets {
-    grid-area: pets;
-    width: 100%;
-  } */
   
   p {
     display: block;
@@ -149,13 +101,8 @@ div>img {
     line-height: 1.4;
     font-size: 2rem;
     margin: 5px 20px;
-    
-
-  
+     
   
 }
 
 
-
-
-                                            

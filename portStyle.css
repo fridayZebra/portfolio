@@ -10,10 +10,30 @@
 body {
   width: 100%;
   background: whitesmoke;
+    font-family: 'Shadows Into Light', cursive;
+    letter-spacing: .3rem;
 }
 
 .portfolio-container {
   display: grid;
-  margin: auto;
+  justify-content: center;
+  align-items: center;
 }
 
+
+div>h2 {
+  display: grid;
+  justify-content: center;
+  
+}
+div>img {
+  width: 90vw;
+  margin: 10px;
+  border-radius: 10px;
+  border: 1px dashed lightgray;
+}
+
+a {
+  text-decoration: none;
+  
+}

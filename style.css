@@ -54,7 +54,13 @@ div > img {
   border-radius: 10px;
   border: 1px dashed whitesmoke;
   width: 90vw;
+  
   }
+
+.portfolio > img {
+  height: 400px;
+  
+}
 
 img:hover {
   cursor: pointer;
@@ -101,7 +107,10 @@ a {
   div > img {
   width: 50vw;
   }
-
+.portfolio > img {
+  height: 475px;
+}
+  
 }
 
 /* Medium devices (landscape tablets, 1200px and up) */
@@ -110,6 +119,9 @@ a {
   div > img {
   width: 40vw;
   }
-
+.portfolio > img {
+  height: 600px;
+}
+  
 }
 

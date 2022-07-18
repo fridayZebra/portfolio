@@ -52,13 +52,14 @@ div > img {
   object-fit: cover;
   margin: 5px 15px;
   border-radius: 10px;
-  border: 1px dashed whitesmoke;
+/*   border: 1px dashed whitesmoke; */
   width: 90vw;
+  box-shadow: 1px 1px 9px black;
   
   }
 
-.portfolio > img {
-  height: 400px;
+.portfolio>img {
+  height: 400px;  
   
 }
 
@@ -107,21 +108,40 @@ a {
   div > img {
   width: 50vw;
   }
-.portfolio > img {
-  height: 475px;
+
+  
+}
+
+/* Medium devices (landscape tablets, 1050px and up) */
+@media only screen and (min-width: 1050px) {
+  
+  .portfolio>img {
+    height: 600px;  
+  
 }
   
 }
 
-/* Medium devices (landscape tablets, 1200px and up) */
-@media only screen and (min-width: 1600px) {
+/* Medium devices (landscape tablets, 1300px and up) */
+@media only screen and (min-width: 1300px) {
 
+  .container {
+    display: grid;
+    justify-items: center;
+    grid-template-areas:
+      "port"
+      "about pets";
+}
+
+   
   div > img {
   width: 40vw;
   }
-.portfolio > img {
-  height: 600px;
+ 
+  .portfolio>img {
+    height: 800px;  
 }
+
   
 }
 

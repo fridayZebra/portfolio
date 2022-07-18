@@ -24,7 +24,6 @@ body {
 .container {
   display: grid;
   justify-items: center;
-     
 }
 
 div {
@@ -50,19 +49,35 @@ p {
 }
 
 div > img {
-  width: 90vw;
+  object-fit: cover;
   margin: 5px 15px;
   border-radius: 10px;
   border: 1px dashed whitesmoke;
+  width: 90vw;
   }
 
 img:hover {
   cursor: pointer;
 }
 
+img:active{
+  transform:scale(.8);
+  box-shadow: none;
+  border: none;
+}
+
 a {
   text-decoration: none;
 }
+
+.about-me > h2, .pets>h2 {
+  margin-right: 40px;
+}
+.portfolio > h2 {
+  margin-left: 40px;
+}
+
+
 
 /**************** PET GALLERY *******************/
 
@@ -83,49 +98,18 @@ a {
 /* Medium devices (landscape tablets, 650px and up) */
 @media only screen and (min-width: 650px) {
 
-  .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 100vw;
-    
+  div > img {
+  width: 50vw;
   }
 
-  div {
-    display: grid;
-    
-  }
-
-  div.text {
-    width: 400;
-    font-size: .9rem;
-  }
-  
-  div>img {
-    object-fit: cover;
-    width: 400px;
-    height: 300px;
-    margin: 5 30px;
-    
-  }
-  
-  p {
-    display: block;
-    align-self: center;
-    padding: 10px;
-    color: white;
-    border-radius: 10px;
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: .1rem;
-    line-height: 1.4;
-    font-size: 1.1rem;
-    margin: 5px 20px;
-     
-.about-me>h2{
-  margin-right: 400px;
 }
 
+/* Medium devices (landscape tablets, 1200px and up) */
+@media only screen and (min-width: 1600px) {
 
-    
+  div > img {
+  width: 40vw;
+  }
+
 }
-
 

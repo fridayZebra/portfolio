@@ -7,7 +7,7 @@
 }
 
 html {
-  display: block;
+  display: grid;
 
 }
 
@@ -23,12 +23,13 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
   justify-items: center;
      
 }
 
+div {
+  display: grid;
+}
 
 h2 {
   color: white;
@@ -76,7 +77,7 @@ a {
 .pet {
   margin: 5px 10px;
 }
-
+/**************** PET GALLERY *******************/
 
 
 /* Medium devices (landscape tablets, 650px and up) */
@@ -85,13 +86,30 @@ a {
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: center;
+    width: 100vw;
+    
+  }
+
+  div {
+    display: grid;
+    
+  }
+
+  div.text {
+    width: 400;
+    font-size: .9rem;
+  }
+  
+  div>img {
+    object-fit: cover;
+    width: 400px;
+    height: 300px;
+    margin: 5 30px;
     
   }
   
   p {
     display: block;
-    justify-self: center;
     align-self: center;
     padding: 10px;
     color: white;
@@ -99,10 +117,15 @@ a {
     font-family: 'Roboto', sans-serif;
     letter-spacing: .1rem;
     line-height: 1.4;
-    font-size: 2rem;
+    font-size: 1.1rem;
     margin: 5px 20px;
      
-  
+.about-me>h2{
+  margin-right: 400px;
+}
+
+
+    
 }
 
 

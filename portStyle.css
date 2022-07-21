@@ -14,6 +14,19 @@ body {
     letter-spacing: .2rem;
 }
 
+nav {
+  z-index: 10;
+  position: fixed;
+  font-size: .8em;
+  margin-left: 20px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.pizza-haiku {
+  margin-top: 30px;
+}
+
 .portfolio-container {
   display: grid;
   justify-content: center;
@@ -40,6 +53,7 @@ img:active {
   border: none;
 }
 
+
 a {
   text-decoration: none;
   color: aliceblue;
@@ -62,6 +76,8 @@ a:visited {
     letter-spacing: .3rem;
     width: 100;
 }
+
+ 
  div>img {
   display: grid;
   object-fit: cover;
@@ -71,8 +87,14 @@ a:visited {
   border: none;  
 }
 
+  nav {
+  margin-left: 50%;
+  
+}
+  
 }
 
+/* Medium devices (1050px and up) */
 @media only screen and (min-width: 1050px) {
    div>img {
     display: grid;
@@ -80,6 +102,22 @@ a:visited {
     width: 500px;
     height: 500px;
     margin: 10px 20px;  
+}
+  
+nav {
+  margin-left: 50%;
+  font-size: .9em;
+
+}
+
+}
+
+/* Medium devices (1050px and up) */
+@media only screen and (min-width: 1250px) {
+  
+nav {
+  font-size: 1.1em;
+  
 }
 
   
